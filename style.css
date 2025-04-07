@@ -420,47 +420,44 @@ footer {
     text-align: center;
 }
 @media (max-width: 768px) {
+    body {
+        background: black;
+    }
     
     .navbar {
-        padding: 15px 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 25px;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+     
+    }
+
+    .navbar ul {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        position:fixed;
-         
+        align-items: center;
+        gap: 5px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
     }
     
-    .navbar ul {
-        display: flex; 
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 60px 0 15px 0;
-        position:fixed;
-        top: 0;
-        left: 5;
-        
-    }
-    
-    .navbar ul li {
-        margin: 8px 0;
-        padding: 8px 0;
-    }
-    
-    .navbar ul li a {
-        font-size: 18px;
-        font-weight: 500;
-    }
-  
     .home {
       flex-direction: column;
       text-align: center;
+      padding-top: 150px; 
+      gap:10px;
     }
     
     .home-img {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 30px;
+        margin-top: 20px;
+        padding-bottom: 30px;
         transform: none; 
       }
     
@@ -469,7 +466,7 @@ footer {
         height: 200px;
         margin: auto;
         position: relative;
-        transform: scale(1.05); 
+        
       }
     
       .home-img .img-box .img-item img {
@@ -479,7 +476,7 @@ footer {
         height: 90%;
         object-fit: cover;
         border-radius: 50%;
-        transform: scale(1);
+    
       }
     
       .home-img .img-box::before,
@@ -500,7 +497,14 @@ footer {
       flex-direction: column;
       align-items: center;
     }
-    
+    .services,
+    .projects {
+        padding-top: 150px; 
+    }
+
+    .projects {
+        padding-bottom: 300px; 
+    }
     .contact-info {
         padding: 1.5rem 1rem;
         font-size: 0.95rem;
@@ -514,8 +518,13 @@ footer {
     .btn {
       margin-bottom: 10px;
     }
-  }
 
+    footer {
+         padding-top: 150px;
+         background: black;
+         color:#7cf03d;
+    }
+}
       
       
     
