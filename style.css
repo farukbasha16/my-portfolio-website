@@ -422,15 +422,33 @@ footer {
 @media (max-width: 768px) {
     
     .navbar {
-      flex-direction: column;
-      align-items: flex-start;
+        padding: 15px 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position:fixed;
+         
     }
-  
+    
     .navbar ul {
-      flex-direction: column;
-      width: 100%;
-      gap: 10px;
-      margin-top: 10px;
+        display: flex; 
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 60px 0 15px 0;
+        position:fixed;
+        top: 0;
+        left: 0;
+        
+    }
+    
+    .navbar ul li {
+        margin: 8px 0;
+        padding: 8px 0;
+    }
+    
+    .navbar ul li a {
+        font-size: 18px;
+        font-weight: 500;
     }
   
     .home {
