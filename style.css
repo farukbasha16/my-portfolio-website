@@ -438,33 +438,39 @@ footer {
       flex-direction: column;
       text-align: center;
     }
-  
+
     .home-img {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 30px;
+        transform: none; 
       }
     
-    .home-img .img-box {
+      .home-img .img-box {
         width: 200px;
         height: 200px;
         margin: auto;
-        position: static;
+        position: relative;
+        transform: scale(1.05); 
       }
     
-    .home-img .img-box .img-item img {
+      .home-img .img-box .img-item img {
         position: relative;
         top: 0;
         width: 90%;
         height: 90%;
+        object-fit: cover;
+        border-radius: 50%;
+        transform: scale(1);
       }
     
-    .home-img .img-box::before,
-    .home-img .img-box::after {
+      .home-img .img-box::before,
+      .home-img .img-box::after {
         width: 250px;
         height: 250px;
       }
+
   
     .services-container,
     .projects-container {
